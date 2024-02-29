@@ -15,6 +15,7 @@ public class Main {
         int y = scan.nextInt();
         System.out.print("Hasil dari aritmatika pertambahan: " + arithmatic.Pertambahan(x,y));
         System.out.print("\nHasil dari aritmatika pengurangan: " + arithmatic.Pengurangan(x,y));
+        System.out.print("\nHasil dari aritmatika perkalian: " + arithmatic.Perkalian(x,y));
         System.out.println();
 
         System.out.println("Cek Ganjil/Genap");
