@@ -7,9 +7,11 @@ Kemudian diberikan beberapa tugas untuk dikerjakan yang telah dibuat pada reposi
 2. Membuat perhitungan aritmatika sederhana
 3. Membuat tampilan layar segitiga dengan menggunakan looping
 4. Membuat metode yang menampilkan hasil bilangan (ganjil/genap) pada dua bilangan variable yang ditambahkan.
+5. Membuat program yang menerima bilangan positif n, dan menampilkan bilangan bulat positif pertama yang habis dibagi 3 tetapi tidak habis dibagi 2, dengan n adalah jumlah bilangan yang ditampilkan (i.e : n = 5 akan menampilkan 5 bilangan)
+6. Membuat program untuk menghitung deret n= 1+2+3+..+n, dengan nilai n diinputkan oleh pengguna.
 
 ## Class
-Pada tugas ini, saya membuat beberapa kelas yang digunakan untuk membuat tugas. Kelas `Main` akan memanggil kelas `Variables` , `Arithmatic` , dan `OddEven`.
+Pada tugas ini, saya membuat beberapa kelas yang digunakan untuk membuat tugas. Kelas `Main` akan memanggil kelas `Variables` , `Arithmatic` , `OddEven`, `ThreeNotTwo` dan `UlangTambah`.
 Untuk tugas menamampilkan layar segitiga, saya membuat kelas `MakeTriangle` yang terpisah dari kelas `Main`.
 
 ### Main
@@ -31,3 +33,11 @@ sehingga variabel yang dijumlahkan akan dicek apakah termasuk ganjil atau genap.
 ### MakeTriangle
 Kelas ini berdiri sendiri, sehingga tidak dipanggil oleh `Main`. Pada kelas ini, digunakan `Scanner` untuk memasukan nilai ukuran segitiga yang akan dibuat. Selanjutnya berdasarkan ukuran tersebut, dilakukan
 perulangan `for loop` sehingga dalam membuat segitiga akan dilakukan secara otomatis.
+
+### ThreeNotTwo
+Kelas ini menggunakan constructor untuk menyimpan data secara sementara menggunakan `this` kemudian digunakan method `three` untuk melakukan perulangan sesuai dengan n yang dimasukkan. Perulangan tersebut menggunakan `while` dan kondisi dicek menggunakan `if` memastikan nilai yang keluar habis dibagi 3 dan tidak habis dibagi 2. Kelas `ThreeNotTwo` sendiri akan dipanggil oleh kelas `Main` seperti pada kelas lainnya.
+
+### UlangTambah
+Kelas ini akan menghitung jumlah deret sesuai dengan masukan nilai n oleh pengguna. Dengan perulangan `for loop` dapat kita
+set kondisi yang sesuai dengan kebutuhan, yaitu tidak melebihi nilai n dalam perulangannya. Kemudian untuk menambahkan setiap
+bilangan yang diulang digunakan operator `+=` untuk menambahkan nilai sebelumnya dengan nilai baru yang didapat.
