@@ -37,6 +37,7 @@ public class Main {
         }
         ThreeNotTwo three = new ThreeNotTwo(n);
         three.three();
+        System.out.println();
 
         System.out.println("Mencari jumlah deret bilangan");
         System.out.print("Masukan jumlah deret: ");
